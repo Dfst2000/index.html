@@ -116,7 +116,7 @@
     </div>
     <script>
         async function fetchProductData() {
-            return new Promise((resolve, reject) => {
+            return new Promise((resolve) => {
                 window.addEventListener('message', (event) => {
                     if (event.data.type === 'PRODUCT_DATA') {
                         resolve(event.data.products);
@@ -195,4 +195,5 @@
     </script>
 </body>
 </html>
+
 
